@@ -1,4 +1,5 @@
 import tests.*
+import kotlin.system.measureTimeMillis
 
 fun main(Args: Array<String>) {
     try {
@@ -7,16 +8,15 @@ fun main(Args: Array<String>) {
         //Calculate list indice.
         try {
             println("What day_task?")
-            val dt = readLine().toString().split("_").map{v -> v.toInt()}
+            val dt = readLine()!!.split("_").map{v -> v.toInt()}
             if((1..2).contains(dt[1])) {
                 val indice = ((dt[0] - 1) * 2) + (dt[1] - 1)
                 if (execType == "test")
                     Test(indice)
                 else {
-                    println("What is your input?")
-                    val input = readLine().toString()
-                    if (days.List.size > indice && indice >= 0) {
-                        print(days.List[indice](input))
+                    val input = inputs.GetInput(dt[0])
+                    if (days.list.size > indice && indice >= 0) {
+                        print(days.list[indice](input))
                     } else {
                         println("Day ${((indice) % 2) + 1} Task ${(indice % 2) + 1}1 has not been programmed.")
                     }
@@ -30,6 +30,9 @@ fun main(Args: Array<String>) {
     } catch(Ex: Exception) {
         //Testing ALL.
         println("Testing all tasks.")
-        TestAll()
+        val ms = measureTimeMillis {
+            TestAll()
+        }
+        println("Did all tests in $ms ms")
     }
 }

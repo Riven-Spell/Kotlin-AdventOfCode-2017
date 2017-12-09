@@ -3,11 +3,11 @@ package tests
 import kotlin.system.measureTimeMillis
 
 fun Test(indice: Int) {
-    println("Testing Day ${((indice) % 2) + 1} Task ${(indice % 2) + 1}")
-    if(days.List.size > indice && indice >= 0) {
-        val func = days.List[indice]
-        val tests = days.Tests[indice]
-        val answers = days.Answers[indice]
+    println("Testing Day ${((indice) / 2) + 1} Task ${(indice % 2) + 1}")
+    if(days.list.size > indice && indice >= 0) {
+        val func = days.list[indice]
+        val tests = days.tests[indice]
+        val answers = days.answers[indice]
         for ((i, v) in tests.withIndex()) {
             var s = false
             var o = ""
@@ -28,7 +28,7 @@ fun Test(indice: Int) {
 }
 
 fun TestAll() {
-    for(i in days.List.indices) {
+    for(i in days.list.indices) {
         Test(i)
     }
 }
