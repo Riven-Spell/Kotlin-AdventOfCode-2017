@@ -17,7 +17,7 @@ fun main(Args: Array<String>) {
                     val ms = measureTimeMillis {
                         Test(indice)
                     }
-                    println("Day ${((indice) % 2) + 1} Task ${(indice % 2) + 1} completed in $ms ms")
+                    println("Tests completed in $ms ms")
                 } else {
                     val input = inputs.GetInput(dt[0])
                     if (days.list.size > indice && indice >= 0) {

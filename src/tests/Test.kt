@@ -19,7 +19,6 @@ fun Test(indice: Int) {
                 println("Succeeded test $i in $ms ms with correct response $o")
             } else {
                 println("Failed test $i in $ms ms with incorrect response $o, expecting ${answers[i]}")
-                return
             }
         }
     } else {
