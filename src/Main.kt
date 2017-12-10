@@ -19,7 +19,10 @@ fun main(Args: Array<String>) {
                 } else {
                     val input = inputs.GetInput(dt[0])
                     if (days.list.size > indice && indice >= 0) {
-                        print(days.list[indice](input))
+                        val ms = measureTimeMillis {
+                            println("Got result ${days.list[indice](input)}")
+                        }
+                        println("took $ms ms executing!")
                     } else {
                         println("Day ${((indice) % 2) + 1} Task ${(indice % 2) + 1} has not been programmed.")
                     }
