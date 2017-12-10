@@ -1,5 +1,3 @@
-package virepri.adventofcode2017
-
 import tests.*
 import kotlin.system.measureTimeMillis
 

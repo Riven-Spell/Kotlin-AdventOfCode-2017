@@ -1,13 +1,13 @@
-package days
+package days.day2
 
-fun Day2_1(s: String) : String {
+fun day2p1(s: String) : String {
     val lines = s.split("\n")
-    return (1..lines.size).mapIndexed {i,_ -> lineSum(lines[i])}.sum().toString()
+    return (1..lines.size).mapIndexed {i,_ -> lineSum(lines[i]) }.sum().toString()
 }
 
-fun Day2_2(s: String) : String {
+fun day2p2(s: String) : String {
     val lines = s.split("\n")
-    return (1..lines.size).mapIndexed {i,_ -> lineSum2(lines[i])}.sum().toString()
+    return (1..lines.size).mapIndexed {i,_ -> lineSum2(lines[i]) }.sum().toString()
 }
 
 fun lineSum(s: String): Int {
