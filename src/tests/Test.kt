@@ -3,6 +3,9 @@ package tests
 import kotlin.system.measureTimeMillis
 
 fun Test(indice: Int) {
+    //Test-specific value changes
+    days.day10.outputVal = 4
+
     println("Testing Day ${((indice) / 2) + 1} Task ${(indice % 2) + 1}")
     if(days.list.size > indice && indice >= 0) {
         val func = days.list[indice]
