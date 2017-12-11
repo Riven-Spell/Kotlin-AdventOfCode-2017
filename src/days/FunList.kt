@@ -6,6 +6,7 @@ import days.day3.*
 import days.day4.*
 import days.day5.*
 import days.day6.*
+import days.day7.*
 
 val list = listOf(
         ::day1p1, ::day1p2,
@@ -13,7 +14,8 @@ val list = listOf(
         ::day3p1, ::day3p2,
         ::day4p1, ::day4p2,
         ::day5p1, ::day5p2,
-        ::day6p1, ::day6p2
+        ::day6p1, ::day6p2,
+        ::day7p1, ::day7p2
 )
 
 val tests = listOf(
@@ -22,7 +24,8 @@ val tests = listOf(
         listOf("1","12","23","1024"), listOf("54", "133", "330", "747"),
         listOf("aa bb cc dd ee\naa bb cc dd aa\naa bb cc dd aaa"), listOf("abcde fghij\nabcde xyz ecdab\na ab abc abd abf abj\niiii oiii ooii oooi oooo\noiii ioii iioi iiio"),
         listOf("0\n3\n0\n1\n-3"), listOf("0\n3\n0\n1\n-3"),
-        listOf("0 2 7 0"), listOf("0 2 7 0")
+        listOf("0 2 7 0"), listOf("0 2 7 0"),
+        listOf("pbga (66)\nxhth (57)\nebii (61)\nhavc (66)\nktlj (57)\nfwft (72) -> ktlj, cntj, xhth\nqoyq (66)\npadx (45) -> pbga, havc, qoyq\ntknk (41) -> ugml, padx, fwft\njptl (61)\nugml (68) -> gyxo, ebii, jptl\ngyxo (61)\ncntj (57)"), listOf("pbga (66)\nxhth (57)\nebii (61)\nhavc (66)\nktlj (57)\nfwft (72) -> ktlj, cntj, xhth\nqoyq (66)\npadx (45) -> pbga, havc, qoyq\ntknk (41) -> ugml, padx, fwft\njptl (61)\nugml (68) -> gyxo, ebii, jptl\ngyxo (61)\ncntj (57)")
 )
 
 val answers = listOf(
@@ -31,5 +34,6 @@ val answers = listOf(
         listOf("0","3","2","31"), listOf("57", "142", "351", "806"),
         listOf("2"), listOf("3"),
         listOf("5"), listOf("10"),
-        listOf("5"), listOf("4")
+        listOf("5"), listOf("4"),
+        listOf("tknk"), listOf("60")
 )
