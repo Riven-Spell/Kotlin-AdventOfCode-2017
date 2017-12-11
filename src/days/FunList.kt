@@ -5,13 +5,15 @@ import days.day2.*
 import days.day3.*
 import days.day4.*
 import days.day5.*
+import days.day6.*
 
 val list = listOf(
         ::day1p1, ::day1p2,
         ::day2p1, ::day2p2,
         ::day3p1, ::day3p2,
         ::day4p1, ::day4p2,
-        ::day5p1, ::day5p2
+        ::day5p1, ::day5p2,
+        ::day6p1, ::day6p2
 )
 
 val tests = listOf(
@@ -19,7 +21,8 @@ val tests = listOf(
         listOf("5 1 9 5\n7 5 3\n2 4 6 8"), listOf("5 9 2 8\n9 4 7 3\n3 8 6 5"),
         listOf("1","12","23","1024"), listOf("54", "133", "330", "747"),
         listOf("aa bb cc dd ee\naa bb cc dd aa\naa bb cc dd aaa"), listOf("abcde fghij\nabcde xyz ecdab\na ab abc abd abf abj\niiii oiii ooii oooi oooo\noiii ioii iioi iiio"),
-        listOf("0\n3\n0\n1\n-3"), listOf("0\n3\n0\n1\n-3")
+        listOf("0\n3\n0\n1\n-3"), listOf("0\n3\n0\n1\n-3"),
+        listOf("0 2 7 0"), listOf("0 2 7 0")
 )
 
 val answers = listOf(
@@ -27,5 +30,6 @@ val answers = listOf(
         listOf("18"), listOf("9"),
         listOf("0","3","2","31"), listOf("57", "142", "351", "806"),
         listOf("2"), listOf("3"),
-        listOf("5"), listOf("10")
+        listOf("5"), listOf("10"),
+        listOf("5"), listOf("4")
 )

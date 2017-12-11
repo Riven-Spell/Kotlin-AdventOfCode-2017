@@ -7,7 +7,6 @@ fun day3p1(s: String) : String {
     val upper = (1..x step 2).first { it * it >= x }
     val xdist = abs((x % upper) - ((upper / 2) + 1)) - if(sqrt(x.toFloat()).toInt().toFloat().pow(2).toInt() == x) 1 else 0
     val ydist = upper / 2
-    println("$upper $xdist $ydist")
     return (xdist + ydist).toString()
 }
 
