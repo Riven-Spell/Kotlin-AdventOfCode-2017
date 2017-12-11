@@ -8,6 +8,7 @@ import days.day5.*
 import days.day6.*
 import days.day7.*
 import days.day8.*
+import days.day9.*
 
 val list = listOf(
         ::day1p1, ::day1p2,
@@ -17,7 +18,8 @@ val list = listOf(
         ::day5p1, ::day5p2,
         ::day6p1, ::day6p2,
         ::day7p1, ::day7p2,
-        ::day8p1, ::day8p2
+        ::day8p1, ::day8p2,
+        ::day9p1, ::day9p2
 )
 
 val tests = listOf(
@@ -28,7 +30,8 @@ val tests = listOf(
         listOf("0\n3\n0\n1\n-3"), listOf("0\n3\n0\n1\n-3"),
         listOf("0 2 7 0"), listOf("0 2 7 0"),
         listOf("pbga (66)\nxhth (57)\nebii (61)\nhavc (66)\nktlj (57)\nfwft (72) -> ktlj, cntj, xhth\nqoyq (66)\npadx (45) -> pbga, havc, qoyq\ntknk (41) -> ugml, padx, fwft\njptl (61)\nugml (68) -> gyxo, ebii, jptl\ngyxo (61)\ncntj (57)"), listOf("pbga (66)\nxhth (57)\nebii (61)\nhavc (66)\nktlj (57)\nfwft (72) -> ktlj, cntj, xhth\nqoyq (66)\npadx (45) -> pbga, havc, qoyq\ntknk (41) -> ugml, padx, fwft\njptl (61)\nugml (68) -> gyxo, ebii, jptl\ngyxo (61)\ncntj (57)"),
-        listOf("b inc 5 if a > 1\na inc 1 if b < 5\nc dec -10 if a >= 1\nc inc -20 if c == 10"), listOf("b inc 5 if a > 1\na inc 1 if b < 5\nc dec -10 if a >= 1\nc inc -20 if c == 10")
+        listOf("b inc 5 if a > 1\na inc 1 if b < 5\nc dec -10 if a >= 1\nc inc -20 if c == 10"), listOf("b inc 5 if a > 1\na inc 1 if b < 5\nc dec -10 if a >= 1\nc inc -20 if c == 10"),
+        listOf("{}", "{{{}}}", "{{},{}}", "{{{},{},{{}}}}", "{<a>,<a>,<a>,<a>}", "{{<ab>},{<ab>},{<ab>},{<ab>}}", "{{<!!>},{<!!>},{<!!>},{<!!>}}", "{{<a!>},{<a!>},{<a!>},{<ab>}}"), listOf("<>", "<random characters>", "<<<<>", "<{!>}>", "<!!>", "<!!!>>", "<{o\"i!a,<{i<a>")
 )
 
 val answers = listOf(
@@ -39,5 +42,6 @@ val answers = listOf(
         listOf("5"), listOf("10"),
         listOf("5"), listOf("4"),
         listOf("tknk"), listOf("60"),
-        listOf("1"), listOf("10")
+        listOf("1"), listOf("10"),
+        listOf("1", "6", "5", "16", "1", "9", "9", "3"), listOf("0", "17", "3", "2", "0", "0", "10")
 )
