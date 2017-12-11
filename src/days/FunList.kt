@@ -7,6 +7,7 @@ import days.day4.*
 import days.day5.*
 import days.day6.*
 import days.day7.*
+import days.day8.*
 
 val list = listOf(
         ::day1p1, ::day1p2,
@@ -15,7 +16,8 @@ val list = listOf(
         ::day4p1, ::day4p2,
         ::day5p1, ::day5p2,
         ::day6p1, ::day6p2,
-        ::day7p1, ::day7p2
+        ::day7p1, ::day7p2,
+        ::day8p1, ::day8p2
 )
 
 val tests = listOf(
@@ -25,7 +27,8 @@ val tests = listOf(
         listOf("aa bb cc dd ee\naa bb cc dd aa\naa bb cc dd aaa"), listOf("abcde fghij\nabcde xyz ecdab\na ab abc abd abf abj\niiii oiii ooii oooi oooo\noiii ioii iioi iiio"),
         listOf("0\n3\n0\n1\n-3"), listOf("0\n3\n0\n1\n-3"),
         listOf("0 2 7 0"), listOf("0 2 7 0"),
-        listOf("pbga (66)\nxhth (57)\nebii (61)\nhavc (66)\nktlj (57)\nfwft (72) -> ktlj, cntj, xhth\nqoyq (66)\npadx (45) -> pbga, havc, qoyq\ntknk (41) -> ugml, padx, fwft\njptl (61)\nugml (68) -> gyxo, ebii, jptl\ngyxo (61)\ncntj (57)"), listOf("pbga (66)\nxhth (57)\nebii (61)\nhavc (66)\nktlj (57)\nfwft (72) -> ktlj, cntj, xhth\nqoyq (66)\npadx (45) -> pbga, havc, qoyq\ntknk (41) -> ugml, padx, fwft\njptl (61)\nugml (68) -> gyxo, ebii, jptl\ngyxo (61)\ncntj (57)")
+        listOf("pbga (66)\nxhth (57)\nebii (61)\nhavc (66)\nktlj (57)\nfwft (72) -> ktlj, cntj, xhth\nqoyq (66)\npadx (45) -> pbga, havc, qoyq\ntknk (41) -> ugml, padx, fwft\njptl (61)\nugml (68) -> gyxo, ebii, jptl\ngyxo (61)\ncntj (57)"), listOf("pbga (66)\nxhth (57)\nebii (61)\nhavc (66)\nktlj (57)\nfwft (72) -> ktlj, cntj, xhth\nqoyq (66)\npadx (45) -> pbga, havc, qoyq\ntknk (41) -> ugml, padx, fwft\njptl (61)\nugml (68) -> gyxo, ebii, jptl\ngyxo (61)\ncntj (57)"),
+        listOf("b inc 5 if a > 1\na inc 1 if b < 5\nc dec -10 if a >= 1\nc inc -20 if c == 10"), listOf("b inc 5 if a > 1\na inc 1 if b < 5\nc dec -10 if a >= 1\nc inc -20 if c == 10")
 )
 
 val answers = listOf(
@@ -35,5 +38,6 @@ val answers = listOf(
         listOf("2"), listOf("3"),
         listOf("5"), listOf("10"),
         listOf("5"), listOf("4"),
-        listOf("tknk"), listOf("60")
+        listOf("tknk"), listOf("60"),
+        listOf("1"), listOf("10")
 )
