@@ -4,8 +4,8 @@ import days.day1.*
 import days.day10.*
 import days.day11.*
 import days.day12.*
-import days.day13.day13p1
-import days.day13.day13p2
+import days.day13.*
+import days.day14.*
 import days.day2.*
 import days.day3.*
 import days.day4.*
@@ -28,7 +28,8 @@ val list = listOf(
         ::day10p1, ::day10p2,
         ::day11p1, ::day11p2,
         ::day12p1, ::day12p2,
-        ::day13p1, ::day13p2
+        ::day13p1, ::day13p2,
+        ::day14p1, ::day14p2
 )
 
 val tests = listOf(
@@ -44,7 +45,8 @@ val tests = listOf(
         listOf("3, 4, 1, 5"), listOf("", "AoC 2017", "1,2,3", "1,2,4"),
         listOf("ne,ne,ne", "ne,ne,sw,sw", "ne,ne,s,s", "se,sw,se,sw,sw", "se,se,se,s,s", "s,s,se,ne", "s,s,s,se", "s,s,s,se,ne,se", "se,ne,se,s,s,s", "se,ne,se,n,n,n"), listOf("ne,ne,ne", "ne,ne,sw,sw", "ne,ne,s,s", "se,sw,se,sw,sw", "se,se,se,s,s", "s,s,se,ne", "s,s,s,se", "s,s,s,se,ne,se", "se,ne,se,s,s,s", "se,ne,se,n,n,n"),
         listOf("0 <-> 2\n1 <-> 1\n2 <-> 0, 3, 4\n3 <-> 2, 4\n4 <-> 2, 3, 6\n5 <-> 6\n6 <-> 4, 5"), listOf("0 <-> 2\n1 <-> 1\n2 <-> 0, 3, 4\n3 <-> 2, 4\n4 <-> 2, 3, 6\n5 <-> 6\n6 <-> 4, 5"),
-        listOf("0: 3\n1: 2\n4: 4\n6: 4"), listOf("0: 3\n1: 2\n4: 4\n6: 4")
+        listOf("0: 3\n1: 2\n4: 4\n6: 4"), listOf("0: 3\n1: 2\n4: 4\n6: 4"),
+        listOf("flqrgnkx"), listOf("flqrgnkx")
 )
 
 val answers = listOf(
@@ -60,5 +62,6 @@ val answers = listOf(
         listOf("12"), listOf("a2582a3a0e66e6e86e3812dcb672a272", "33efeb34ea91902bb2f59c9920caa6cd", "3efbe78a8d82f29979031a4aa0b16a9d", "63960835bcdc130f0b66d7ff4f6a5a8e"),
         listOf("3", "0", "2", "3", "5", "3", "4", "5", "5", "4"), listOf("3", "2", "2", "3", "5", "3", "4", "5", "5", "4"),
         listOf("6"), listOf("2"),
-        listOf("24"), listOf("10")
+        listOf("24"), listOf("10"),
+        listOf("8108"), listOf("1242")
 )
